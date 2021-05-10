@@ -1,0 +1,20 @@
+{
+  "name": "ember-template-lint-plugin-financeit",
+  "version": "1.0.0",
+  "description": "Financeit shareable ember-template-lint plugin",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/financeit/ember-template-lint-plugin-financeit.git"
+  },
+  "keywords": [
+    "hbs",
+    "handlebars",
+    "htmlbars"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/financeit/ember-template-lint-plugin-financeit/issues"
+  },
+  "homepage": "https://github.com/financeit/ember-template-lint-plugin-financeit#readme"
+}

@@ -4,10 +4,7 @@ This repo contains a set of shareable rules and configuration for used for templ
 
 ### Installation
 
-In your `./package.json`, under `devDependencies`, add the following:
-```
-  "ember-template-lint-plugin-financeit": "git+ssh://git@github.com:financeit/ember-template-lint-plugin-financeit.git#master
-```
+In your project root: `yarn add git+ssh://git@github.com:financeit/ember-template-lint-plugin-financeit.git --dev`
 
 Then inside of your newly generated `/.template-lintrc.js`:
 

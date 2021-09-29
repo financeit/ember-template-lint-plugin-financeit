@@ -10,8 +10,6 @@ module.exports = class FormComponentsMustBeWrapped extends Rule {
     'UiAddressAutocomplete',
     'ui-checkbox-standalone',
     'UiCheckboxStandalone',
-    'ui-checkbox',
-    'UiCheckbox',
     'ui-date-time-picker',
     'UiDateTimePicker',
     'ui-radio-group',
@@ -22,8 +20,11 @@ module.exports = class FormComponentsMustBeWrapped extends Rule {
     'UiSignaturePad',
     'ui-text-area',
     'UiTextArea',
-    'ui-toggle',
-    'UiToggle'
+    'ui-segmented-control',
+    'UiSegmentedControl'
+
+    // ui-checkbox and ui-toggle currently don't work using form objects but should be added to this list
+    // when they are updated
   ]
 
   visitor() {

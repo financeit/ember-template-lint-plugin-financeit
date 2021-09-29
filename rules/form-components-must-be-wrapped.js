@@ -43,7 +43,6 @@ module.exports = class FormComponentsMustBeWrapped extends Rule {
 
   checkTagName(node, name) {
     if (this.INVALID_TAG_NAMES.includes(name)) {
-      // console.log(node)
       this.log({
         message: `
           You've attempted to use the ${name} form component which has not been wrapped in a {{ui-form}} or {{ui-form-fields-for}} tag.

@@ -1,6 +1,6 @@
 {
   "name": "ember-template-lint-plugin-financeit",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Financeit shareable ember-template-lint plugin",
   "main": "index.js",
   "repository": {

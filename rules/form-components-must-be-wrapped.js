@@ -1,8 +1,8 @@
 'use strict'
 
-const Rule = require('ember-template-lint').Rule
+import { Rule } from 'ember-template-lint'
 
-module.exports = class FormComponentsMustBeWrapped extends Rule {
+export default class FormComponentsMustBeWrapped extends Rule {
   INVALID_TAG_NAMES = [
     'ui-text-field',
     'UiTextField',

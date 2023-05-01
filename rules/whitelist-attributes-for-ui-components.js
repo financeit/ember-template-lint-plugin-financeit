@@ -1,8 +1,8 @@
 'use strict'
 
-const Rule = require('ember-template-lint').Rule
+import { Rule } from 'ember-template-lint'
 
-module.exports = class WhitelistAriaDataAndIdAttributes extends Rule {
+export default class WhitelistAriaDataAndIdAttributes extends Rule {
   regex = new RegExp('(^data-.+)|(^aria-.+)|id|(^@.+)')
 
   ERROR_MESSAGE = 'Financeit Ui* components should only have data-*, aria-*, or id attributes'

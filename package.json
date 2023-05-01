@@ -3,6 +3,7 @@
   "version": "1.2.0",
   "description": "Financeit shareable ember-template-lint plugin",
   "main": "index.js",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/financeit/ember-template-lint-plugin-financeit.git"

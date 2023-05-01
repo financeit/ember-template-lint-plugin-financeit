@@ -1,12 +1,15 @@
-/* eslint-env node */
 'use strict'
 
-module.exports = {
+import whitelistAttributesForUiComponents from './rules/whitelist-attributes-for-ui-components'
+import formComponentsMustBeWrapped from './rules/form-components-must-be-wrapped'
+import uiFormFieldValueMustSupplyOnValueChange from './rules/ui-form-field-value-must-supply-on-value-change'
+
+export default {
   name: 'financeit',
 
   rules: {
-    'whitelist-attributes-for-ui-components': require('./rules/whitelist-attributes-for-ui-components'),
-    'form-components-must-be-wrapped': require('./rules/form-components-must-be-wrapped'),
-    'ui-form-field-value-must-supply-on-value-change': require('./rules/ui-form-field-value-must-supply-on-value-change'),
+    'whitelist-attributes-for-ui-components': whitelistAttributesForUiComponents,
+    'form-components-must-be-wrapped': formComponentsMustBeWrapped,
+    'ui-form-field-value-must-supply-on-value-change': uiFormFieldValueMustSupplyOnValueChange
   }
 }

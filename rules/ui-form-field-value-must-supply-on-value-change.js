@@ -1,8 +1,8 @@
 'use strict'
 
-const Rule = require('ember-template-lint').Rule
+import { Rule } from 'ember-template-lint'
 
-module.exports = class UiFormFieldValueMustSupplyOnValueChange extends Rule {
+export default class UiFormFieldValueMustSupplyOnValueChange extends Rule {
   tagNamesToCheck = new Set([
     'ui-text-field',
     'UiTextField',

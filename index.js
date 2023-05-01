@@ -1,8 +1,8 @@
 'use strict'
 
-import whitelistAttributesForUiComponents from './rules/whitelist-attributes-for-ui-components'
-import formComponentsMustBeWrapped from './rules/form-components-must-be-wrapped'
-import uiFormFieldValueMustSupplyOnValueChange from './rules/ui-form-field-value-must-supply-on-value-change'
+import whitelistAttributesForUiComponents from './rules/whitelist-attributes-for-ui-components.js'
+import formComponentsMustBeWrapped from './rules/form-components-must-be-wrapped.js'
+import uiFormFieldValueMustSupplyOnValueChange from './rules/ui-form-field-value-must-supply-on-value-change.js'
 
 export default {
   name: 'financeit',

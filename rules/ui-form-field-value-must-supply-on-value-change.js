@@ -42,7 +42,13 @@ export default class UiFormFieldValueMustSupplyOnValueChange extends Rule {
   }
 
   checkTagName(node, name) {
-    if (this.tagNamesToCheck.has(name)) {
+    if (typeof name !== 'string') {
+      return
+    }
+    
+    const nameParts = name.split('.')
+    const namePostfix = nameParts[nameParts.length - 1]
+    if (this.tagNamesToCheck.has(namePostfix)) {
 
       if (this.hasValueAttribute(node) && !this.hasOnValueChangeAttribute(node)) {
         this.log({
